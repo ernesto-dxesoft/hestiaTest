@@ -95,6 +95,7 @@
   },
   "defaultProject": "hestia-test",
   "cli": {
+    "analytics": "fc54b9e5-1b50-44c7-b599-5ddcaa65b086",
     "packageManager": "npm"
   }
 }
