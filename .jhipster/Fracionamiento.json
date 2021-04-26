@@ -1,0 +1,62 @@
+{
+  "name": "Fracionamiento",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "javadoc": "name",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "200"
+    },
+    {
+      "fieldName": "startDate",
+      "fieldType": "LocalDate",
+      "javadoc": "startDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "totalHouses",
+      "fieldType": "Integer",
+      "javadoc": "totalHouses",
+      "fieldValidateRules": ["required", "min"],
+      "fieldValidateRulesMin": "49"
+    },
+    {
+      "fieldName": "costByHouse",
+      "fieldType": "BigDecimal",
+      "javadoc": "costByHouse",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "StatusFraccionamiento",
+      "fieldValues": "ACTIVO,TERMINADO,SUSPENDIDO",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "contract",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "address",
+      "otherEntityRelationshipName": "fracionamiento",
+      "relationshipName": "address",
+      "ownerSide": true
+    }
+  ],
+  "javadoc": "The Fracionamiento entity.\\n@author A true hipster",
+  "entityTableName": "fracionamiento",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210426200022"
+}

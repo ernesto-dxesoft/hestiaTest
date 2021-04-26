@@ -41,6 +41,8 @@
     "packageFolder": "com/dxesoft/hestiatest",
     "jwtSecretKey": "MWQ0ZDEyMzk1ZjliMjkyYWVhMjM4ZDk2MjA3NzRmZDRjMDRmMDFkMjExMjU5ZjFkNGE0NzM1ZWYzZWRjN2MwY2RjODJhYWM3YmNlOWVmY2IzYjlmNmQ1ODA5NmU4MWE2YTRkMzBjYWE2NTQwNjQ4ZjU5ODFmYmFkNjJlNjBlNjY=",
     "clientPackageManager": "npm",
-    "languages": ["es", "en"]
+    "languages": ["es", "en"],
+    "entities": ["Fracionamiento", "Address"],
+    "lastLiquibaseTimestamp": 1619467223000
   }
 }

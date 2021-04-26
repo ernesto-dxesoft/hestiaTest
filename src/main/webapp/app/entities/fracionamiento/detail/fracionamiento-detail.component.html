@@ -1,0 +1,80 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="fracionamiento">
+      <h2 data-cy="fracionamientoDetailsHeading"><span jhiTranslate="hestiaTestApp.fracionamiento.detail.title">Fracionamiento</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ fracionamiento.id }}</span>
+        </dd>
+        <dt>
+          <span jhiTranslate="hestiaTestApp.fracionamiento.name" [ngbTooltip]="'hestiaTestApp.fracionamiento.help.name' | translate"
+            >Name</span
+          >
+        </dt>
+        <dd>
+          <span>{{ fracionamiento.name }}</span>
+        </dd>
+        <dt>
+          <span
+            jhiTranslate="hestiaTestApp.fracionamiento.startDate"
+            [ngbTooltip]="'hestiaTestApp.fracionamiento.help.startDate' | translate"
+            >Start Date</span
+          >
+        </dt>
+        <dd>
+          <span>{{ fracionamiento.startDate | formatMediumDate }}</span>
+        </dd>
+        <dt>
+          <span
+            jhiTranslate="hestiaTestApp.fracionamiento.totalHouses"
+            [ngbTooltip]="'hestiaTestApp.fracionamiento.help.totalHouses' | translate"
+            >Total Houses</span
+          >
+        </dt>
+        <dd>
+          <span>{{ fracionamiento.totalHouses }}</span>
+        </dd>
+        <dt>
+          <span
+            jhiTranslate="hestiaTestApp.fracionamiento.costByHouse"
+            [ngbTooltip]="'hestiaTestApp.fracionamiento.help.costByHouse' | translate"
+            >Cost By House</span
+          >
+        </dt>
+        <dd>
+          <span>{{ fracionamiento.costByHouse }}</span>
+        </dd>
+        <dt><span jhiTranslate="hestiaTestApp.fracionamiento.status">Status</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'hestiaTestApp.StatusFraccionamiento.' + fracionamiento.status }}">{{ fracionamiento.status }}</span>
+        </dd>
+        <dt><span jhiTranslate="hestiaTestApp.fracionamiento.contract">Contract</span></dt>
+        <dd>
+          <span>{{ fracionamiento.contract }}</span>
+        </dd>
+        <dt><span jhiTranslate="hestiaTestApp.fracionamiento.address">Address</span></dt>
+        <dd>
+          <div *ngIf="fracionamiento.address">
+            <a [routerLink]="['/address', fracionamiento.address?.id, 'view']">{{ fracionamiento.address?.id }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/fracionamiento', fracionamiento.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

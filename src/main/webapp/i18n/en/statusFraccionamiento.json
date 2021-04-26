@@ -1,0 +1,10 @@
+{
+  "hestiaTestApp": {
+    "StatusFraccionamiento": {
+      "null": "",
+      "ACTIVO": "ACTIVO",
+      "TERMINADO": "TERMINADO",
+      "SUSPENDIDO": "SUSPENDIDO"
+    }
+  }
+}

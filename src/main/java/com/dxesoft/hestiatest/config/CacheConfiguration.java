@@ -48,6 +48,8 @@ public class CacheConfiguration {
             createCache(cm, com.dxesoft.hestiatest.domain.User.class.getName());
             createCache(cm, com.dxesoft.hestiatest.domain.Authority.class.getName());
             createCache(cm, com.dxesoft.hestiatest.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.dxesoft.hestiatest.domain.Fracionamiento.class.getName());
+            createCache(cm, com.dxesoft.hestiatest.domain.Address.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

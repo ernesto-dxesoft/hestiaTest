@@ -1,0 +1,36 @@
+{
+  "hestiaTestApp": {
+    "fracionamiento": {
+      "home": {
+        "title": "Fracionamientos",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Fracionamiento",
+        "createOrEditLabel": "Create or edit a Fracionamiento",
+        "notFound": "No Fracionamientos found"
+      },
+      "created": "A new Fracionamiento is created with identifier {{ param }}",
+      "updated": "A Fracionamiento is updated with identifier {{ param }}",
+      "deleted": "A Fracionamiento is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Fracionamiento {{ id }}?"
+      },
+      "detail": {
+        "title": "Fracionamiento"
+      },
+      "id": "ID",
+      "name": "Name",
+      "startDate": "Start Date",
+      "totalHouses": "Total Houses",
+      "costByHouse": "Cost By House",
+      "status": "Status",
+      "contract": "Contract",
+      "address": "Address",
+      "help": {
+        "name": "name",
+        "startDate": "startDate",
+        "totalHouses": "totalHouses",
+        "costByHouse": "costByHouse"
+      }
+    }
+  }
+}
